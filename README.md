@@ -18,11 +18,14 @@ Never paste it directly into a notebook cell.
 ### Environment — local recommended over Colab
 Running the notebooks locally gives you faster iteration, persistent state between cells, and proper `.env` support. The notebooks work in both environments, but local is preferred.
 
-**Local setup with `uv` (recommended):**
+**Local setup:**
 ```bash
 git clone https://github.com/JanClusmann/easl_school_material
 cd easl_school_material
-uv venv && uv pip install openai python-dotenv PyMuPDF faiss-cpu numpy pandas openpyxl gradio tiktoken
+python -m venv .venv
+# Windows:  .venv\Scripts\activate
+# Mac/Linux: source .venv/bin/activate
+pip install -r requirements.txt
 ```
 Then open the `.ipynb` files in VS Code or JupyterLab.
 

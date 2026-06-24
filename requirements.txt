@@ -1,0 +1,11 @@
+openai
+python-dotenv
+PyMuPDF
+faiss-cpu
+numpy
+pandas
+openpyxl
+gradio
+tiktoken
+ddgs
+openai-agents
